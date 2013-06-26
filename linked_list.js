@@ -80,6 +80,14 @@ var LinkedList = function() {
         }
     };
 
+    this.sumNodesUntilEnd = function(node) {
+        if (node.getNext() === null) {
+            return 1;
+        } else {
+            return 1 + this.sumNodesUntilEnd(node.getNext());
+        }
+    };
+
     //
     // Public-facing functions.
     //
@@ -114,4 +122,22 @@ var LinkedList = function() {
         nodePreviousToDelete.setNext(newNext);
         return nodeToDelete;
     };
+
+    this.last = function() {
+        var theLastNode = this.lastNode();
+        if (theLastNode === null) {
+            return null;
+        } else {
+            return theLastNode.getData();
+        }
+    };
+
+    this.length = function() {
+        if (this.firstNode === null) {
+            return 0;
+        }
+        return this.sumNodesUntilEnd(this.firstNode);
+    }
 };
+
+exports.LinkedList = LinkedList;
