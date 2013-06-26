@@ -86,11 +86,12 @@ var LinkedList = function() {
 
     this.append = function(object) {
         var theLastNode = this.lastNode();
-        if (theLastNode === null) {
-            return false;
-        }
         var nodeToAppend = new LinkedListNode(object);
-        theLastNode.setNext(nodeToAppend);
+        if (theLastNode === null) {
+            this.firstNode = nodeToAppend;
+        } else {
+            theLastNode.setNext(nodeToAppend);
+        }
         return true;
     };
 
