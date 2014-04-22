@@ -1,0 +1,29 @@
+{
+  "name": "js-linked-list",
+  "version": "0.1.0",
+  "description": "Minimalist linked list implementation.",
+  "main": "linked_list.js",
+  "dependencies": {},
+  "devDependencies": {
+    "coffee-script": "^1.7.0",
+    "jasmine-node": "^1.14.3"
+  },
+  "scripts": {
+    "test": "jasmine-node spec/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/parkr/js-linked-list.git"
+  },
+  "keywords": [
+    "linked",
+    "list",
+    "linked-list"
+  ],
+  "author": "Parker Moore",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/parkr/js-linked-list/issues"
+  },
+  "homepage": "https://github.com/parkr/js-linked-list"
+}
