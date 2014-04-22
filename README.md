@@ -2,6 +2,8 @@
 
 A linked-list implementation in JavaScript.
 
+[![Build Status](https://travis-ci.org/parkr/js-linked-list.svg?branch=master)](https://travis-ci.org/parkr/js-linked-list)
+
 ## Why
 
 I had never implemented this data structure in JavaScript and wanted to work with Jasmine.
